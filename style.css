@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Fira Sans', sans-serif;
+	background-color:#f0ecee;
+}
+/* General styling */
+ul {
+	list-style-type: none;
+}
+span {
+	color: #ff4850;
+}
+a, p {
+	color: #88898B;
+	text-decoration: none;
+	font-size: 18px;
+}
+a:hover{
+	color: #ff4850;
+}
+
+button{
+	background: #ff4850;
+	border: none;
+	margin: 20px 0;
+	padding: 10px;
+	color: white;
+	border-radius: 15px;/* is this right? */
+	font-size: 18px;
+	width: 100%;
+}
+button:hover{
+	color: #ff4850;
+	background-color: #ccc;
+}
+/*end general styling */
+/* Start Nav styles */
+
+.title {
+	font-weight: 400;
+	font-size: 25px;
+	margin: 0 0 0 0px;
+	padding: 15px 0px;
+}
+nav {
+	padding: 0 20px;
+}
+/* end nav styles */
+
+
+
+/* Begin Content styles */
+
+.container {
+	padding: 5px 20px;
+	margin: 0;
+}
+
+h1{
+	margin: 50px 0 0 0;
+	font-weight: 600;
+	font-size: 40px;
+}
+p {
+	margin: 20px 0px 0 0;
+	font-size: 19px;
+}
+/* End Content styles */
+/* Start Image styles */
+
+img{
+	width: 900px;
+	height: auto;
+	display: none;
+	margin: 0 200px 0 0;
+}
+
+/* Desktop Menu */
+
+
+@media (min-width: 768px) {
+	.menu {
+		display: flex;
+		flex: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.title{
+		flex: 1;
+	}
+	button{
+		width: auto;
+	}
+	nav{
+		padding: 5px 100px;
+	}
+	.menu li {
+		padding: 15px 20px;
+	}
+	.container {
+		display: flex;
+
+	}
+	.content{
+		margin: 100px 100px 0 100px;
+	}
+	h1{
+		margin: 50px 0;
+	}
+	p{
+		letter-spacing: 1px;
+	}
+	
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+	#dog{
+		display: block !important;
+	}
+}
